@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report1" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" isSummaryWithPageHeaderAndFooter="true" uuid="f679ae3f-5d3b-4b05-938a-098a419f8001">
+	<property name="ireport.zoom" value="0.75"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<field name="unidadeSaude" class="java.lang.String"/>
+	<field name="paciente" class="java.lang.String"/>
+	<field name="idade" class="java.lang.String"/>
+	<field name="sexo" class="java.lang.String"/>
+	<field name="descricaoReceita" class="java.lang.String"/>
+	<field name="data" class="java.lang.String"/>
+	<field name="titulo" class="java.lang.String"/>
+	<field name="tituloReqExa" class="java.lang.String"/>
+	<field name="imagem" class="java.lang.String"/>
+	<field name="cabecalho01" class="java.lang.String"/>
+	<field name="cabecalho02" class="java.lang.String"/>
+	<field name="cabecalho03" class="java.lang.String"/>
+	<field name="cabecalho04" class="java.lang.String"/>
+	<field name="indicacaoExames" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="78" splitType="Stretch">
+			<rectangle>
+				<reportElement x="0" y="1" width="555" height="77" uuid="a7fb87a8-d905-4675-81bf-228c56145c1e"/>
+			</rectangle>
+			<frame>
+				<reportElement x="0" y="0" width="555" height="77" uuid="dee69b34-cf79-4204-9833-ca9f842c311e"/>
+				<image>
+					<reportElement stretchType="RelativeToTallestObject" mode="Opaque" x="2" y="2" width="77" height="75" uuid="5d1859d1-44cf-4533-afff-331a380ffb1a"/>
+					<imageExpression><![CDATA[$F{imagem}]]></imageExpression>
+				</image>
+				<textField>
+					<reportElement x="0" y="65" width="555" height="12" isRemoveLineWhenBlank="true" uuid="6f3c7b65-75f8-414d-a36a-f76c08aa0c86"/>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="Arial"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{unidadeSaude}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="0" y="1" width="555" height="25" uuid="291bc7b0-0646-4cb7-a7c6-98ebfc4b8365"/>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="Arial" size="12"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{cabecalho01}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="0" y="26" width="555" height="13" uuid="e5e2120b-508f-4851-9b60-44cfe30ffcee"/>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="Arial"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{cabecalho02}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="0" y="39" width="555" height="13" uuid="017c216f-62a3-43fc-9e2d-8e6fa81e3dee"/>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="Arial"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{cabecalho03}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="0" y="52" width="555" height="13" uuid="32213aba-4930-4357-9d54-e9723add9aa8"/>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="Arial"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{cabecalho04}]]></textFieldExpression>
+				</textField>
+			</frame>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="77" splitType="Stretch">
+			<rectangle>
+				<reportElement x="0" y="0" width="555" height="76" uuid="7dc1f20b-fd2b-48c4-af9c-d6ee7019186a"/>
+			</rectangle>
+			<frame>
+				<reportElement x="0" y="0" width="555" height="77" uuid="d7d36aac-f84d-4398-baa4-5c278d18c48e"/>
+				<textField>
+					<reportElement x="11" y="34" width="533" height="12" uuid="ff988625-281e-413c-8a41-813e8dd5b59f"/>
+					<textElement>
+						<font fontName="Arial"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{paciente}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="11" y="46" width="533" height="12" uuid="fe9b5022-e00f-4dba-a641-8b979255f5e8"/>
+					<textElement>
+						<font fontName="Arial"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{idade}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="11" y="58" width="533" height="12" uuid="81a84f61-cfcc-45d9-b0b2-ca0ce31a2e1c"/>
+					<textElement>
+						<font fontName="Arial"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{sexo}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="0" y="0" width="555" height="34" uuid="6d5384f3-6c3a-4345-a4ad-da9c78851fa4"/>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="Arial" size="12" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{titulo}]]></textFieldExpression>
+				</textField>
+			</frame>
+		</band>
+	</pageHeader>
+	<detail>
+		<band height="621">
+			<rectangle>
+				<reportElement x="0" y="0" width="555" height="621" uuid="6bfbf69e-8130-47b2-a0e3-dcc78913bfac"/>
+			</rectangle>
+			<frame>
+				<reportElement x="0" y="0" width="555" height="621" uuid="9136285e-b799-42cf-9b2d-186e3eb8f9ed"/>
+				<textField>
+					<reportElement x="11" y="29" width="533" height="582" uuid="4c2c597c-1780-4778-8858-889b29192df7"/>
+					<textElement>
+						<font fontName="Arial"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{descricaoReceita}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="11" y="9" width="533" height="20" isRemoveLineWhenBlank="true" uuid="1113401e-0d97-4d9b-8e4b-1a6896095064"/>
+					<textElement verticalAlignment="Middle">
+						<font fontName="Arial" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{tituloReqExa}]]></textFieldExpression>
+				</textField>
+			</frame>
+		</band>
+	</detail>
+	<pageFooter>
+		<band height="12" splitType="Stretch">
+			<textField pattern="dd/MM/yyyy HH.mm.ss">
+				<reportElement x="0" y="0" width="555" height="12" uuid="bc72277b-4138-4e6a-bf2b-aebdca748f77"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Arial"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{data}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+</jasperReport>
